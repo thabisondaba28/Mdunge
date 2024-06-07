@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvMorningScreenTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Morning Screen Time (minutes)"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"/>
+
+    <EditText
+        android:id="@+id/etMorningScreenTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvMorningScreenTime"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/tvAfternoonScreenTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Afternoon Screen Time (minutes)"
+        android:layout_below="@id/etMorningScreenTime"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"/>
+
+    <EditText
+        android:id="@+id/etAfternoonScreenTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvAfternoonScreenTime"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/btnDetailedView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Detailed View"
+        android:layout_below="@id/etAfternoonScreenTime"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"/>
+
+    <Button
+        android:id="@+id/btnClearData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear Data"
+        android:layout_below="@id/etAfternoonScreenTime"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="150dp"/>
+
+</RelativeLayout>
